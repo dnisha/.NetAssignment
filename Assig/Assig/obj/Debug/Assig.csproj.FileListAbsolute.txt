@@ -1,0 +1,8 @@
+D:\.NetPractice\Assig\Assig\bin\Debug\Assig.exe.config
+D:\.NetPractice\Assig\Assig\bin\Debug\Assig.exe
+D:\.NetPractice\Assig\Assig\bin\Debug\Assig.pdb
+D:\.NetPractice\Assig\Assig\obj\Debug\Assig.csproj.AssemblyReference.cache
+D:\.NetPractice\Assig\Assig\obj\Debug\Assig.csproj.SuggestedBindingRedirects.cache
+D:\.NetPractice\Assig\Assig\obj\Debug\Assig.csproj.CoreCompileInputs.cache
+D:\.NetPractice\Assig\Assig\obj\Debug\Assig.exe
+D:\.NetPractice\Assig\Assig\obj\Debug\Assig.pdb

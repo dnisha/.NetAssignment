@@ -1,0 +1,8 @@
+D:\.NetPractice\tut2\tut2\bin\Debug\tut2.exe.config
+D:\.NetPractice\tut2\tut2\bin\Debug\tut2.exe
+D:\.NetPractice\tut2\tut2\bin\Debug\tut2.pdb
+D:\.NetPractice\tut2\tut2\obj\Debug\tut2.csproj.AssemblyReference.cache
+D:\.NetPractice\tut2\tut2\obj\Debug\tut2.csproj.SuggestedBindingRedirects.cache
+D:\.NetPractice\tut2\tut2\obj\Debug\tut2.csproj.CoreCompileInputs.cache
+D:\.NetPractice\tut2\tut2\obj\Debug\tut2.exe
+D:\.NetPractice\tut2\tut2\obj\Debug\tut2.pdb

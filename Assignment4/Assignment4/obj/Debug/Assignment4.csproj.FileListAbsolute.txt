@@ -1,0 +1,8 @@
+D:\.NetPractice\Assignment4\Assignment4\bin\Debug\Assignment4.exe.config
+D:\.NetPractice\Assignment4\Assignment4\bin\Debug\Assignment4.exe
+D:\.NetPractice\Assignment4\Assignment4\bin\Debug\Assignment4.pdb
+D:\.NetPractice\Assignment4\Assignment4\obj\Debug\Assignment4.csproj.AssemblyReference.cache
+D:\.NetPractice\Assignment4\Assignment4\obj\Debug\Assignment4.csproj.SuggestedBindingRedirects.cache
+D:\.NetPractice\Assignment4\Assignment4\obj\Debug\Assignment4.csproj.CoreCompileInputs.cache
+D:\.NetPractice\Assignment4\Assignment4\obj\Debug\Assignment4.exe
+D:\.NetPractice\Assignment4\Assignment4\obj\Debug\Assignment4.pdb

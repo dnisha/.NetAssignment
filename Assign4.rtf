@@ -1,0 +1,515 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Bahnschrift Light SemiCondensed;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs24\lang9   //Q1\par
+            /*\par
+            Console.Write("Enter number of Rows : ");\par
+           int r = Convert.ToInt32( Console.ReadLine());\par
+            for(int i=0; i<=r; i++)\par
+            \{\par
+                int d = i + 1;\par
+                for (int j = 0; j <= i; j++)\par
+                \{\par
+                   \par
+                    Console.Write(d+" \\t");\par
+                    d = d - 1;\par
+                    \par
+                   \par
+                \}\par
+                Console.WriteLine();\par
+               \par
+            \}\par
+            Console.ReadLine();\par
+            */\par
+\par
+            //Q2\par
+            /*\par
+            for(int  i=1;i<=4; i++)\par
+            \{\par
+                int k = i;\par
+                for(int j = 1; j <= i; j++)\par
+                \{\par
+                    Console.Write(k+" \\t");\par
+                    if (j == 2)\par
+                        k = k + 2;\par
+                    else if (j == 3)\par
+                        k = k + 1;\par
+                    else\par
+                        k = k + 3;\par
+                \}\par
+                Console.WriteLine();\par
+            \}\par
+            \par
+           \par
+            Console.ReadLine();\par
+            */\par
+\par
+            //Q3\par
+            /*\par
+              Console.WriteLine("The pattern is : ");\par
+\par
+              for (int i = 0; i < 3; i++)\par
+              \{\par
+                  for (int j = 0; j < 3; j++)\par
+                  \{\par
+                      Console.Write(i+1+" \\t");\par
+                  \}\par
+                  Console.WriteLine();\par
+\par
+              \}\par
+              Console.ReadLine();\par
+            */\par
+            //Q4)\par
+            /*\par
+\par
+            Console.WriteLine("The pattern is : ");\par
+\par
+            for (int i = 0; i < 3; i++)\par
+            \{\par
+                for (int j = 0; j < 3; j++)\par
+                \{\par
+                    Console.Write(j + 1 + " \\t");\par
+                \}\par
+                Console.WriteLine();\par
+\par
+            \}\par
+            Console.ReadLine();\par
+            */\par
+\par
+            //Q5)\par
+            /*\par
+            Console.WriteLine("The pattern is : ");\par
+\par
+            for (int i = 0; i < 3; i++)\par
+            \{\par
+                for (int j = 0; j <= i; j++)\par
+                \{\par
+                    Console.Write(j+1 + " \\t");\par
+                \}\par
+                Console.WriteLine();\par
+\par
+            \}\par
+            Console.ReadLine();\par
+            */\par
+            //Q6)\par
+            /*\par
+            Console.WriteLine("The pattern is : ");\par
+\par
+            for (int i = 3; i > 0; i--)\par
+            \{\par
+                for (int j = 0; j < i; j++)\par
+                \{\par
+                    Console.Write(i  + " \\t");\par
+                \}\par
+                Console.WriteLine();\par
+\par
+            \}\par
+            Console.ReadLine();\par
+\par
+            */\par
+            // Q7)\par
+            /*\par
+            Console.WriteLine("The pattern is : ");\par
+            int count = 1;\par
+\par
+            for (int i = 0; i <3; i++)\par
+            \{\par
+                for (int j = 0; j<3; j++)\par
+                \{\par
+                    Console.Write(count + " \\t");\par
+                    count = count + 1;\par
+                \}\par
+                Console.WriteLine();\par
+\par
+            \}\par
+            Console.ReadLine();\par
+            */\par
+\par
+            //Q8)\par
+            /*\par
+            Console.WriteLine("The pattern is : ");\par
+            int count = 1;\par
+\par
+            for (int i = 0; i < 3; i++)\par
+            \{\par
+                for (int j = 0; j <= i; j++)\par
+                \{\par
+                    Console.Write(count + " \\t");\par
+                    count = count + 1;\par
+                \}\par
+                Console.WriteLine();\par
+\par
+            \}\par
+            Console.ReadLine();\par
+            */\par
+            //Q9)\par
+            /*\par
+            Console.WriteLine("The pattern is : ");\par
+            int x = 65;\par
+           \par
+\par
+            for (int i = 0; i < 3; i++)\par
+            \{\par
+                for (int j = 0; j <=i; j++)\par
+                \{\par
+                    Console.Write(Convert.ToChar(x)+ " \\t");\par
+                    x = x + 1;\par
+                \}\par
+                Console.WriteLine();\par
+\par
+            \}\par
+            Console.ReadLine();\par
+            */\par
+            //Q10)\par
+            /*\par
+            Console.WriteLine("The pattern is : ");\par
+         \par
+\par
+\par
+            for (int i = 0; i < 4; i++)\par
+            \{\par
+                for (int j = 0; j <= i; j++)\par
+                \{\par
+                    Console.Write('*' + " \\t");\par
+                   \par
+                \}\par
+                Console.WriteLine();\par
+\par
+            \}\par
+            Console.ReadLine();\par
+            */\par
+            //Q11)\par
+            /*\par
+            Console.WriteLine("The pattern is : ");\par
+   \par
+\par
+\par
+            for (int i = 4; i > 0; i--)\par
+            \{\par
+                for (int j = 0; j <i; j++)\par
+                \{\par
+                    Console.Write('*'+ " \\t");\par
+                   \par
+                \}\par
+                Console.WriteLine();\par
+\par
+            \}\par
+            Console.ReadLine();\par
+            */\par
+            //Q12)\par
+            /*\par
+            Console.WriteLine("The pattern is : ");\par
+           \par
+\par
+\par
+            for (int i = 4; i >=0; i--)\par
+            \{\par
+                for (int j = 0; j <=4-i; j++)\par
+                \{\par
+                    Console.Write(' ' + " \\t");\par
+                   \par
+                \}\par
+\par
+                for (int j = 0; j <= i ; j++)\par
+                \{\par
+                    Console.Write('*' + " \\t");\par
+\par
+                \}\par
+                Console.WriteLine();\par
+\par
+            \}\par
+            Console.ReadLine();\par
+            */\par
+\par
+\par
+            //Q13\par
+            /*\par
+            Console.WriteLine("The pattern is : ");\par
+          \par
+            for (int i = 0; i < 5; i++)\par
+            \{\par
+                int x = 5;\par
+                for (int j = 0;j<=i;j++)\par
+                \{\par
+                    Console.Write(x+" \\t");\par
+                    x = x - 1;\par
+                \}\par
+                Console.WriteLine();\par
+            \}\par
+            Console.ReadLine();\par
+            */\par
+            //Q14)\par
+            /*\par
+            Console.WriteLine("The pattern is : ");\par
+            for (int i = 7; i > 0; i--)\par
+            \{ \par
+                if(i > 3)\par
+                \{\par
+                for (int j = 0; j <= 7-i; j++)\par
+                \par
+                    Console.Write('*' + " \\t");\par
+\par
+                \}\par
+                else\par
+                \{\par
+                    for (int j = i-1; j >=0; j--)\par
+                        Console.Write('*' + " \\t");\par
+                \}\par
+                Console.WriteLine();\par
+            \}\par
+            Console.ReadLine();\par
+            */\par
+\par
+            //Q15\par
+            /*\par
+            Console.WriteLine("The pattern is : ");\par
+            for(int j = 5; j > 0; j--)\par
+            \{\par
+                int x = 5;\par
+                for (int i = j; i >0 ; i--)\par
+                \{\par
+                   \par
+                    Console.Write(x+" \\t");\par
+                    x = x - 1;\par
+\par
+                \}\par
+                Console.WriteLine();\par
+            \}\par
+            Console.ReadLine();\par
+            */\par
+            //Q16\par
+            /*\par
+            Console.Write("Enter size of array : ");\par
+            int s = Convert.ToInt32(Console.ReadLine());\par
+\par
+            int [] a = new int[s];\par
+\par
+            for (int i = 0; i < s; i++)\par
+            \{\par
+                Console.Write("Enter value at index "+i+" : ");\par
+                 a[i] = Convert.ToInt32(Console.ReadLine());\par
+            \}\par
+            Console.WriteLine("Array : ");\par
+            for (int i = 0; i < a.Length; i++)\par
+            \{\par
+                Console.Write(a[i]+"\\t");\par
+            \}\par
+            Console.ReadLine();\par
+            */\par
+\par
+            //Q17\par
+            /*\par
+            Console.Write("Enter size of array : ");\par
+            int s = Convert.ToInt32(Console.ReadLine());\par
+\par
+            int[] a = new int[s];\par
+\par
+            for (int i = 0; i < s; i++)\par
+            \{\par
+                Console.Write("Enter value at index " + i + " : ");\par
+                a[i] = Convert.ToInt32(Console.ReadLine());\par
+            \}\par
+            Console.WriteLine("Array in reverse order : ");\par
+            for (int i = a.Length-1; i >= 0; i--)\par
+            \{\par
+                Console.Write(a[i] + "\\t");\par
+            \}\par
+            Console.ReadLine();\par
+            */\par
+\par
+            //Q18\par
+            /*\par
+\par
+            Console.Write("Enter size of array : ");\par
+            int s = Convert.ToInt32(Console.ReadLine());\par
+\par
+            int[] a = new int[s];\par
+\par
+            for (int i = 0; i < s; i++)\par
+            \{\par
+                Console.Write("Enter value at index " + i + " : ");\par
+                a[i] = Convert.ToInt32(Console.ReadLine());\par
+            \}\par
+            Console.WriteLine("Sum of Array : ");\par
+            int sum = 0;\par
+            for (int i = 0; i < a.Length; i++)\par
+            \{\par
+                sum = sum+a[i] ;\par
+            \}\par
+            Console.Write(sum);\par
+            Console.ReadLine();\par
+\par
+            */\par
+\par
+            //Q19\par
+            /*\par
+\par
+            Console.Write("Enter size of array : ");\par
+            int s = Convert.ToInt32(Console.ReadLine());\par
+\par
+            int[] a = new int[s];\par
+            int []b=new int[a.Length];\par
+\par
+            for (int i = 0; i < s; i++)\par
+            \{\par
+                Console.Write("Enter value at index " + i + " : ");\par
+                a[i] = Convert.ToInt32(Console.ReadLine());\par
+            \}\par
+         \par
+            for (int i = 0; i < a.Length; i++)\par
+            \{\par
+                b[i]= a[i];\par
+            \}\par
+\par
+            Console.WriteLine("Another array : ");\par
+\par
+         \par
+                b = a;\par
+          \par
+\par
+            for (int i = 0; i < a.Length; i++)\par
+            \{\par
+                Console.Write(b[i]  + '\\t');\par
+            \}\par
+            Console.ReadLine();\par
+            */\par
+            //Q20\par
+            /*\par
+            int[,] a = new int[3, 3];\par
+\par
+            for (int i = 0; i < 3; i++)\par
+            \{\par
+                for (int j = 0; j < 3; j++)\par
+                \{\par
+                    Console.Write("Enter value at index " + i + " & " + j + " : ");\par
+                    a[i, j] = Convert.ToInt32(Console.ReadLine());\par
+                \}\par
+            \}\par
+\par
+            Console.WriteLine("Array value : ");\par
+            for (int i = 0; i < 3; i++)\par
+            \{\par
+                for (int j = 0; j < 3; j++)\par
+                \{\par
+                    Console.Write(a[i, j] + " \\t");\par
+\par
+                \}\par
+                Console.WriteLine();\par
+            \}\par
+            Console.ReadLine();\par
+            */\par
+\par
+\par
+            /*\par
+            //Q21\par
+            Console.Write("Enter row of array : ");\par
+            int r = Convert.ToInt32(Console.ReadLine());\par
+            Console.Write("Enter column of array : ");\par
+            int c = Convert.ToInt32(Console.ReadLine());\par
+\par
+            int[,] a = new int[r,c];\par
+\par
+            for (int i = 0; i < r; i++)\par
+            \{\par
+                for (int j = 0; j < c; j++)\par
+                \{\par
+                    Console.Write("Enter value at index " + i + " & "+j+" : ");\par
+                    a[i,j] = Convert.ToInt32(Console.ReadLine());\par
+                \}\par
+            \}\par
+\par
+            Console.WriteLine("Array value : ");\par
+            for (int i = 0; i < r; i++)\par
+            \{\par
+                for (int j = 0; j < c; j++)\par
+                \{\par
+                    Console.Write(a[i, j]+" \\t");\par
+                  \par
+                \}\par
+                Console.WriteLine();\par
+            \}\par
+            Console.ReadLine();\par
+            */\par
+            //Q22\par
+            /*\par
+            Console.Write("Enter row of array : ");\par
+            int r = Convert.ToInt32(Console.ReadLine());\par
+            Console.Write("Enter column of array : ");\par
+            int c = Convert.ToInt32(Console.ReadLine());\par
+            Console.Write("Enter z of array : ");\par
+            int z = Convert.ToInt32(Console.ReadLine());\par
+\par
+            int[, ,] a = new int[r, c,z];\par
+\par
+            for (int i = 0; i < r; i++)\par
+            \{\par
+                for (int j = 0; j < c; j++)\par
+                \{\par
+                    for (int k = 0; k < z; k++)\par
+                    \{\par
+                        Console.Write("Enter value at index " + i + " & " + j + " & " + z +" : ");\par
+                        a[i, j, k] = Convert.ToInt32(Console.ReadLine());\par
+                    \}\par
+                    Console.WriteLine();\par
+                \}\par
+                Console.WriteLine();\par
+            \}\par
+\par
+            Console.WriteLine("Array value : ");\par
+            for (int i = 0; i < r; i++)\par
+            \{\par
+                for (int j = 0; j < c; j++)\par
+                \{\par
+                    for (int k = 0; k < z; k++)\par
+                    \{\par
+                        Console.Write(a[i, j, k] + " \\t");\par
+                    \}\par
+                    Console.WriteLine();\par
+                \}\par
+                Console.WriteLine();\par
+            \}\par
+            Console.ReadLine();\par
+            */\par
+\par
+            //Q23\par
+            Console.Write("Enter no. of rows");\par
+\par
+            int iNoRows = Convert.ToInt32(Console.ReadLine());\par
+            int[][] arr1 = new int[iNoRows][];\par
+            Console.WriteLine();\par
+            for (int i = 0; i < arr1.Length; i++)\par
+            \{\par
+                Console.Write("Enter no. of columns for row" + (i + 1) + ":");\par
+                arr1[i] = new int[Convert.ToInt32(Console.ReadLine())];\par
+            \}\par
+\par
+            Console.WriteLine();\par
+\par
+            for (int i = 0; i < arr1.Length; i++)\par
+            \{\par
+                for (int j = 0; j < arr1[i].Length; j++)\par
+                \{\par
+                    Console.Write("Enter value for Row " + (i + 1) + ", Column " + (j + 1) + ":");\par
+\par
+                    arr1[i][j] = Convert.ToInt32(Console.ReadLine());\par
+                \}\par
+                Console.WriteLine();\par
+            \}\par
+\par
+            Console.WriteLine("Reading values of Jagged Array.....");\par
+\par
+\par
+            for (int i = 0; i < arr1.Length; i++)\par
+            \{\par
+                for (int j = 0; j < arr1[i].Length; j++)\par
+                \{\par
+                    Console.Write(arr1[i][j] + "\\t");\par
+\par
+                \}\par
+                Console.WriteLine();\par
+\par
+            \}\par
+\par
+            Console.ReadLine();\par
+        \par
+}
+ 

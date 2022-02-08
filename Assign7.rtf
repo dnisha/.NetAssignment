@@ -1,0 +1,315 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Cascadia Mono;}{\f2\fnil\fcharset0 Cascadia Mono;}}
+{\colortbl ;\red0\green0\blue0;\red0\green0\blue255;\red43\green145\blue175;\red163\green21\blue21;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs32\lang9 //Q1\par
+\cf1\f1   \cf2 static\cf1  \cf2 void\cf1  Main(\cf2 string\cf1 [] args)\par
+        \{\par
+\par
+\par
+            Person p = \cf2 new\cf1  Person();\par
+\par
+            Student s = \cf2 new\cf1  Student();\par
+            s.setAge(20);\par
+            s.ShowAge();\par
+\par
+            Teacher t = \cf2 new\cf1  Teacher();  \par
+            t.setAge(30);\par
+            t.Explain();\par
+            Console.ReadLine();\par
+        \}\par
+    \}\par
+    \cf2 class\cf1  \cf3 Person\cf1\par
+    \{\par
+       \cf2 public\cf1  \cf2 int\cf1  age;\par
+\par
+        \cf2 public\cf1  \cf3 Person\cf1 ()\par
+        \{\par
+            Console.WriteLine(\cf4 "Hello"\cf1 );\par
+        \}\par
+        \cf2 public\cf1  \cf2 void\cf1  setAge(\cf2 int\cf1  age)\par
+        \{\par
+       \cf2 this\cf1 .age = age;\par
+        \}\par
+        \par
+\par
+    \}\par
+    \cf2 class\cf1  \cf3 Teacher\cf1 :Person\par
+    \{\par
+        String subject;\par
+     \par
+        \cf2 public\cf1  \cf2 void\cf1  Explain()\par
+        \{\par
+            Console.WriteLine(\cf4 "Explaination Begins"\cf1 );\par
+        \}\par
+    \}\par
+    \cf2 class\cf1  \cf3 Student\cf1 :Person\par
+    \{\par
+        \cf2 public\cf1  \cf2 void\cf1  GoToClass()\par
+        \{\par
+            Console.WriteLine(\cf4 "I\rquote m going to class"\cf1 );\par
+        \}\par
+        \cf2 public\cf1  \cf2 void\cf1  ShowAge()\par
+        \{\par
+            Console.WriteLine(\cf4 "My age is "\cf1  + \cf2 this\cf1 .age+\cf4 " "\cf1 );\par
+        \}\par
+\par
+    \}\par
+\par
+\f2\lang1033 //Q2)\par
+\f1  \cf2 internal\cf1  \cf2 class\cf1  \cf3 PhotoAlbum\cf1\par
+    \{\par
+        \cf2 int\cf1  pages;\par
+        \cf2 public\cf1  \cf3 PhotoAlbum\cf1 ()\par
+        \{\par
+            \cf2 this\cf1 .pages = 16;\par
+\par
+        \}\par
+        \cf2 public\cf1  \cf3 PhotoAlbum\cf1 (\cf2 int\cf1  pages)\par
+        \{\par
+            \cf2 this\cf1 .pages = pages;\par
+        \}\par
+       \cf2 public\cf1  \cf2 void\cf1  GetNumberOfPages()\par
+        \{\par
+            Console.WriteLine(\cf4 "Number of pages are "\cf1  + \cf2 this\cf1 .pages);\par
+\par
+        \}\par
+        \cf2 static\cf1  \cf2 void\cf1  Main (String [] args)\par
+        \{\par
+            PhotoAlbum album = \cf2 new\cf1  PhotoAlbum(30);\par
+            album.GetNumberOfPages();\par
+\par
+            Console.ReadLine();\par
+\par
+        \}\par
+    \}\par
+    \cf2 class\cf1  \cf3 BigPhotoAlbum\cf1\par
+    \{\par
+        \cf2 int\cf1  page;\par
+        \cf2 public\cf1  \cf3 BigPhotoAlbum\cf1 ()\par
+        \{\par
+            \cf2 this\cf1 .page = 64;\par
+        \}\par
+    \}\par
+    \cf2 class\cf1  \cf3 AlbumTest\cf1\par
+    \{\par
+        \cf2 int\cf1  page;\par
+        \cf2 public\cf1  \cf3 AlbumTest\cf1 ()\par
+        \{\par
+            \cf2 this\cf1 .page = 24;\par
+        \}\par
+    \}\par
+\par
+\f2 //Q3)\par
+\par
+\f1  \cf2 internal\cf1  \cf2 class\cf1  \cf3 Calculator\cf1\par
+    \{\par
+        \cf2 static\cf1  \cf2 void\cf1  Main(String [] args)\par
+        \{\par
+            Calculator c = \cf2 new\cf1  Calculator();\par
+            \par
+            Console.WriteLine(\cf4 "Press 1 for Addition :"\cf1 );\par
+            Console.WriteLine(\cf4 "Press 2 for Subtraction :"\cf1 );\par
+            Console.WriteLine(\cf4 "Press 3 for Multiplication :"\cf1 );\par
+            Console.WriteLine(\cf4 "Press 4 for Division :"\cf1 );\par
+            Console.WriteLine(\cf4 "Press 5 for Modulus :"\cf1 );\par
+            Console.WriteLine(\cf4 "Press 6 for Factorial :"\cf1 );\par
+            Console.WriteLine(\cf4 "Press 7 for square :"\cf1 );\par
+            Console.WriteLine(\cf4 "Press 8 for cube :"\cf1 );\par
+            Console.WriteLine(\cf4 "Press 9 for power :"\cf1 );\par
+            Console.WriteLine(\cf4 "Press 10 for exponential :"\cf1 );\par
+            Console.WriteLine(\cf4 "What do you want to perform :"\cf1 );\par
+            \cf2 int\cf1  o= Convert.ToInt32(Console.ReadLine());\par
+            \cf2 switch\cf1  (o)\par
+            \{\par
+                    \cf2 case\cf1  1:c.addition();\par
+                    \cf2 break\cf1 ;\par
+                    \cf2 case\cf1  2:c.subtraction();\par
+                    \cf2 break\cf1 ;\par
+                \cf2 case\cf1  3:c.multiplication();\par
+                    \cf2 break\cf1 ;\par
+                \cf2 case\cf1  4:c.division();\par
+                    \cf2 break\cf1 ;\par
+                \cf2 case\cf1  5:c.modulus();\par
+                    \cf2 break\cf1 ;\par
+                \cf2 case\cf1  6:c.factorial();\par
+                    \cf2 break\cf1 ;\par
+                \cf2 case\cf1  7:c.square();\par
+                    \cf2 break\cf1 ;\par
+                \cf2 case\cf1  8:c.cube();\par
+                    \cf2 break\cf1 ;\par
+                \cf2 case\cf1  9:c.powern();\par
+                    \cf2 break\cf1 ;\par
+                \cf2 case\cf1  10:c.exp();\par
+                    \cf2 break\cf1 ;\par
+\par
+            \}\par
+                \par
+\par
+         \par
+            Console.ReadLine();\par
+\par
+        \}\par
+\par
+        \cf2 public\cf1  \cf2 void\cf1  addition()\par
+        \{\par
+            Console.WriteLine(\cf4 "Enter first Number : "\cf1 );\par
+           \cf2 int\cf1  a=Convert.ToInt32( Console.ReadLine());\par
+            Console.WriteLine(\cf4 "Enter second Number : "\cf1 );\par
+            \cf2 int\cf1  b = Convert.ToInt32(Console.ReadLine());\par
+            Console.WriteLine(\cf4 "Addition of \{0\} and \{1\} is : "\cf1 +(a+b),a,b);\par
+        \}\par
+\par
+        \cf2 public\cf1  \cf2 void\cf1  subtraction()\par
+        \{\par
+            Console.WriteLine(\cf4 "Enter first Number : "\cf1 );\par
+            \cf2 int\cf1  a = Convert.ToInt32(Console.ReadLine());\par
+            Console.WriteLine(\cf4 "Enter second Number : "\cf1 );\par
+            \cf2 int\cf1  b = Convert.ToInt32(Console.ReadLine());\par
+            Console.WriteLine(\cf4 "Subtraction of \{0\} and \{1\} is : "\cf1  + (a - b), a, b);\par
+        \}\par
+        \cf2 public\cf1  \cf2 void\cf1  multiplication()\par
+        \{\par
+            Console.WriteLine(\cf4 "Enter first Number : "\cf1 );\par
+            \cf2 int\cf1  a = Convert.ToInt32(Console.ReadLine());\par
+            Console.WriteLine(\cf4 "Enter second Number : "\cf1 );\par
+            \cf2 int\cf1  b = Convert.ToInt32(Console.ReadLine());\par
+            Console.WriteLine(\cf4 "Multiplication of \{0\} and \{1\} is : "\cf1  + (a * b), a, b);\par
+        \}\par
+        \cf2 public\cf1  \cf2 void\cf1  division()\par
+        \{\par
+            Console.WriteLine(\cf4 "Enter first Number : "\cf1 );\par
+            \cf2 int\cf1  a = Convert.ToInt32(Console.ReadLine());\par
+            Console.WriteLine(\cf4 "Enter second Number : "\cf1 );\par
+            \cf2 int\cf1  b = Convert.ToInt32(Console.ReadLine());\par
+            Console.WriteLine(\cf4 "Subtraction of \{0\} and \{1\} is : "\cf1  + (a / b), a, b);\par
+        \}\par
+        \cf2 public\cf1  \cf2 void\cf1  modulus()\par
+        \{\par
+            Console.WriteLine(\cf4 "Enter first Number : "\cf1 );\par
+            \cf2 int\cf1  a = Convert.ToInt32(Console.ReadLine());\par
+            Console.WriteLine(\cf4 "Enter second Number : "\cf1 );\par
+            \cf2 int\cf1  b = Convert.ToInt32(Console.ReadLine());\par
+            Console.WriteLine(\cf4 "Subtraction of \{0\} and \{1\} is : "\cf1  + (a % b), a, b);\par
+        \}\par
+        \cf2 public\cf1  \cf2 void\cf1  factorial()\par
+        \{\par
+            Console.WriteLine(\cf4 "Enter Number : "\cf1 );\par
+            \cf2 int\cf1  a = Convert.ToInt32(Console.ReadLine());\par
+            \cf2 int\cf1  fact=1;\par
+            \cf2 for\cf1 (\cf2 int\cf1  i = a; i >0; i--)\par
+            \{\par
+                fact *= i;\par
+            \}\par
+            Console.WriteLine(\cf4 "factorial of \{0\} is "\cf1  + fact, a);\par
+        \}\par
+        \cf2 public\cf1  \cf2 void\cf1  square()\par
+        \{\par
+            Console.WriteLine(\cf4 "Enter Number : "\cf1 );\par
+            \cf2 int\cf1  a = Convert.ToInt32(Console.ReadLine());\par
+            Console.WriteLine(\cf4 "square  of \{0\} is "\cf1  + (a*a), a);\par
+        \}\par
+        \cf2 public\cf1  \cf2 void\cf1  cube()\par
+        \{\par
+            Console.WriteLine(\cf4 "Enter Number : "\cf1 );\par
+            \cf2 int\cf1  a = Convert.ToInt32(Console.ReadLine());\par
+            Console.WriteLine(\cf4 "square  of \{0\} is "\cf1  + (a*a*a), a);\par
+        \}\par
+        \cf2 public\cf1  \cf2 void\cf1  powern()\par
+        \{\par
+            Console.WriteLine(\cf4 "Enter Number : "\cf1 );\par
+            \cf2 int\cf1  a = Convert.ToInt32(Console.ReadLine());\par
+            Console.WriteLine(\cf4 "Enter power : "\cf1 );\par
+            \cf2 int\cf1  pow = Convert.ToInt32(Console.ReadLine());\par
+            \cf2 int\cf1  num=1;\par
+            \cf2 for\cf1 (\cf2 int\cf1  i = 1; i <= pow; i++)\par
+            \{\par
+                num *= a; \par
+            \}\par
+            Console.WriteLine(\cf4 "\{0\} to power  of \{1\} is : "\cf1  + (num), a,pow);\par
+        \}\par
+\par
+        \cf2 public\cf1  \cf2 void\cf1  exp()\par
+        \{\par
+            Console.WriteLine(\cf4 "Enter Number : "\cf1 );\par
+            \cf2 int\cf1  a = Convert.ToInt32(Console.ReadLine());\par
+            Console.WriteLine(\cf4 "exponential of \{0\} is : "\cf1  + Math.Exp(a),a);\par
+\par
+        \}\par
+    \}\par
+\par
+\f2 //Q4)\par
+\f1  \cf2 internal\cf1  \cf2 class\cf1  \cf3 atm\cf1\par
+    \{\par
+        \cf2 static\cf1  \cf2 int\cf1  pin = 123;\par
+       \cf2 static\cf1  \cf2 float\cf1  bal;\par
+        \cf2 static\cf1  \cf2 void\cf1  Main(String [] args)\par
+        \{\par
+            Console.WriteLine(\cf4 "!!________________Welcome________________!!"\cf1 );\par
+            Console.WriteLine(\cf4 "Enter Password : "\cf1 );\par
+            \cf2 int\cf1  p = Convert.ToInt32(Console.ReadLine());\par
+        \par
+            \cf2 if\cf1  (pin == p)\par
+            \{\par
+                menu();\par
+            \}\par
+            \cf2 else\cf1\par
+            \{\par
+                Console.WriteLine(\cf4 "You Entered Incorrect Password"\cf1 );\par
+            \}\par
+           \par
+            Console.ReadLine();\par
+        \}\par
+        \cf2 public\cf1  \cf2 static\cf1  \cf2 void\cf1  menu()\par
+        \{\par
+          \par
+\par
+          \par
+                Console.WriteLine(\cf4 "Press 1 for balance enquiry :"\cf1 );\par
+                Console.WriteLine(\cf4 "Press 2 for withdraw money :"\cf1 );\par
+                Console.WriteLine(\cf4 "Press 3 for deposit money :"\cf1 );\par
+                Console.WriteLine(\cf4 "Press 4 for Exit :"\cf1 );\par
+                Console.WriteLine(\cf4 "What do you want to perform :"\cf1 );\par
+                \cf2 int\cf1  o = Convert.ToInt32(Console.ReadLine());\par
+\par
+                atm a = \cf2 new\cf1  atm();\par
+                \cf2 switch\cf1  (o)\par
+                \{\par
+                    \cf2 case\cf1  1:\par
+                        a.balance();\par
+\par
+                        \cf2 break\cf1 ;\par
+                    \cf2 case\cf1  2:\par
+                        a.withdraw();\par
+                        \cf2 break\cf1 ;\par
+                    \cf2 case\cf1  3:\par
+                        a.deposit();\par
+                        \cf2 break\cf1 ;\par
+\par
+                \}\par
+            \par
+         \par
+        \}\par
+       \cf2 public\cf1  \cf2 void\cf1  balance()\par
+        \{\par
+            Console.WriteLine(\cf4 "Your balance : "\cf1  + bal);\par
+            menu();\par
+        \}\par
+        \cf2 public\cf1  \cf2 void\cf1  withdraw()\par
+        \{\par
+            Console.WriteLine(\cf4 "Enter the amout to withdraw : "\cf1 );\par
+            \cf2 int\cf1  amount = Convert.ToInt32(Console.ReadLine());\par
+            bal = bal - amount;\par
+            menu();\par
+\par
+        \}\par
+        \cf2 public\cf1  \cf2 void\cf1  deposit()\par
+        \{\par
+            Console.WriteLine(\cf4 "Enter the amout you want to deposit : "\cf1 );\par
+            \cf2 int\cf1  amount = Convert.ToInt32(Console.ReadLine());\par
+            bal = bal + amount;\par
+            menu();\par
+\par
+        \}\par
+    \}\cf0\f0\lang9\par
+}
+ 

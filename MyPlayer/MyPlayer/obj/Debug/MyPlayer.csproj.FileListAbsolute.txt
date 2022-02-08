@@ -1,0 +1,10 @@
+D:\.NetPractice\MyPlayer\MyPlayer\bin\Debug\MyPlayer.exe.config
+D:\.NetPractice\MyPlayer\MyPlayer\bin\Debug\MyPlayer.exe
+D:\.NetPractice\MyPlayer\MyPlayer\bin\Debug\MyPlayer.pdb
+D:\.NetPractice\MyPlayer\MyPlayer\obj\Debug\MyPlayer.csproj.AssemblyReference.cache
+D:\.NetPractice\MyPlayer\MyPlayer\obj\Debug\MyPlayer.csproj.SuggestedBindingRedirects.cache
+D:\.NetPractice\MyPlayer\MyPlayer\obj\Debug\MyPlayer.Form1.resources
+D:\.NetPractice\MyPlayer\MyPlayer\obj\Debug\MyPlayer.csproj.GenerateResource.cache
+D:\.NetPractice\MyPlayer\MyPlayer\obj\Debug\MyPlayer.csproj.CoreCompileInputs.cache
+D:\.NetPractice\MyPlayer\MyPlayer\obj\Debug\MyPlayer.exe
+D:\.NetPractice\MyPlayer\MyPlayer\obj\Debug\MyPlayer.pdb

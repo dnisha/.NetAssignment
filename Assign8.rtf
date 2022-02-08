@@ -1,0 +1,300 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Cascadia Mono;}{\f2\fnil\fcharset0 Cascadia Mono;}}
+{\colortbl ;\red0\green0\blue0;\red0\green0\blue255;\red43\green145\blue175;\red163\green21\blue21;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 //Q1\par
+\cf1\f1\fs19\par
+    \cf2 internal\cf1  \cf2 class\cf1  \cf3 Rectangle\cf1\par
+    \{\par
+        \cf2 public\cf1  \cf2 int\cf1  length;\par
+        \cf2 public\cf1  \cf2 int\cf1  width;\par
+\par
+        \cf2 public\cf1  \cf3 Rectangle\cf1 ()\par
+        \{\par
+            length = 12;\par
+            width = 4;\par
+\par
+        \}\par
+\par
+        \cf2 public\cf1  \cf3 Rectangle\cf1 (\cf2 int\cf1  l)\par
+        \{\par
+            length = l;\par
+            width = 4;\par
+        \}\par
+\par
+        \cf2 public\cf1  \cf3 Rectangle\cf1 (\cf2 int\cf1  l, \cf2 int\cf1  b)\par
+        \{\par
+            length = l;\par
+            width = b;\par
+        \}\par
+\par
+        \cf2 public\cf1  \cf2 void\cf1  show()\par
+        \{\par
+            Console.WriteLine(\cf4 "Length : "\cf1  + \cf2 this\cf1 .length + \cf4 " Breadth : "\cf1  + \cf2 this\cf1 .width);\par
+        \}\par
+        \cf2 static\cf1  \cf2 void\cf1  Main(\cf2 string\cf1 [] args)\par
+        \{\par
+\par
+            Rectangle rectangle = \cf2 new\cf1  Rectangle();\par
+            Rectangle rectangle1 = \cf2 new\cf1  Rectangle(24);\par
+            Rectangle rectangle2 = \cf2 new\cf1  Rectangle(10,3);\par
+            rectangle.show();\par
+            rectangle1.show();\par
+            rectangle2.show();\par
+            Console.ReadLine();\par
+        \}\par
+    \}\par
+\f2\lang1033 //Q2)\par
+\f1  \cf2 internal\cf1  \cf2 class\cf1  \cf3 DateTest\cf1\par
+    \{\par
+        \cf2 static\cf1  \cf2 void\cf1  Main(\cf2 string\cf1 [] args)\par
+        \{\par
+            Date d1 = \cf2 new\cf1  Date(17, 1, 2022);\par
+            d1.displayDate();\par
+            d1.setDay(11);\par
+            d1.setYear(2021);\par
+            d1.setMonth(2);\par
+            d1.displayDate();\par
+            Console.WriteLine(d1.getDay());\par
+            Console.WriteLine(d1.getMonth());\par
+            Console.WriteLine(d1.getYear());\par
+\par
+            Console.ReadLine();\par
+        \}\par
+        \par
+       \par
+        \par
+    \}\par
+\par
+    \cf2 class\cf1  \cf3 Date\cf1\par
+    \{\par
+        \cf2 public\cf1  \cf2 int\cf1  year,day,month;\par
+\par
+        \cf2 public\cf1  \cf3 Date\cf1 (\cf2 int\cf1  d,\cf2 int\cf1  m,\cf2 int\cf1  y)\par
+        \{\par
+            day = d;\par
+            year = y;\par
+            month = m;\par
+        \}\par
+\par
+        \cf2 public\cf1  \cf2 void\cf1  setDay(\cf2 int\cf1  d)\par
+        \{\par
+            day = d;\par
+        \}\par
+\par
+        \cf2 public\cf1  \cf2 void\cf1  setYear(\cf2 int\cf1  y)\par
+        \{\par
+            year = y;\par
+        \}\par
+        \cf2 public\cf1  \cf2 void\cf1  setMonth(\cf2 int\cf1  m)\par
+        \{\par
+            month = m;\par
+        \}\par
+\par
+        \cf2 public\cf1  \cf2 int\cf1  getDay()\par
+        \{\par
+            \cf2 return\cf1  day;\par
+        \}\par
+\par
+        \cf2 public\cf1  \cf2 int\cf1  getMonth()\par
+        \{\par
+            \cf2 return\cf1  month;\par
+        \}\par
+\par
+        \cf2 public\cf1  \cf2 int\cf1  getYear()\par
+        \{\par
+            \cf2 return\cf1  year;\par
+        \}\par
+\par
+        \cf2 public\cf1  \cf2 void\cf1  displayDate()\par
+        \{\par
+            Console.WriteLine(day + \cf4 "/"\cf1  + month + \cf4 "/"\cf1  + year);\par
+        \}\par
+    \}\par
+\par
+\f2 //Q3)\par
+\f1  \cf2 internal\cf1  \cf2 class\cf1  \cf3 EmployeeTest\cf1\par
+    \{\par
+        \cf2 static\cf1  \cf2 void\cf1  Main(\cf2 string\cf1 [] args)\par
+        \{\par
+\par
+            Employee e1 = \cf2 new\cf1  Employee(\cf4 "mohan"\cf1 , \cf4 "singh"\cf1 , 25000);\par
+            Console.WriteLine(e1.getfname());\par
+            Console.WriteLine(e1.getlname());\par
+            Console.WriteLine(e1.getsalary());\par
+            Console.WriteLine(e1.yearlysalary());\par
+            Employee e2 = \cf2 new\cf1  Employee(\cf4 "anshu"\cf1 ,\cf4 "kumar"\cf1 ,50000);\par
+            Console.WriteLine(e2.getfname());\par
+            Console.WriteLine(e2.getlname());\par
+            Console.WriteLine(e2.getsalary());\par
+            Console.WriteLine(e2.yearlysalary());\par
+\par
+\par
+            Console.ReadLine();\par
+\par
+        \}\par
+    \}\par
+\par
+    \cf2 class\cf1  \cf3 Employee\cf1\par
+    \{\par
+        \cf2 public\cf1  String fname, lname;\par
+        \cf2 public\cf1  \cf2 double\cf1  salary;\par
+\par
+        \cf2 public\cf1  \cf3 Employee\cf1 (String fname,String lname, \cf2 double\cf1  salary)\par
+        \{\par
+            \cf2 this\cf1 .fname = fname;\par
+            \cf2 this\cf1 .lname = lname; \par
+            \cf2 this\cf1 .salary = salary;\par
+        \}\par
+\par
+        \cf2 public\cf1  \cf2 void\cf1  setfname(String fname)\par
+        \{\par
+            \cf2 this\cf1 .fname=fname;\par
+\par
+        \}\par
+\par
+        \cf2 public\cf1  \cf2 void\cf1  setlname(String lname)\par
+        \{\par
+            \cf2 this\cf1 .lname = lname;\par
+\par
+        \}\par
+\par
+        \cf2 public\cf1  \cf2 void\cf1  setsalary(\cf2 double\cf1  salary)\par
+           \par
+        \{\par
+            \cf2 if\cf1  (salary < 0)\par
+            \{\par
+                \cf2 this\cf1 .salary = 0.0;\par
+            \}\par
+            \cf2 else\cf1\par
+            \{\par
+                \cf2 this\cf1 .salary = salary;\par
+            \}\par
+              \par
+\par
+        \}\par
+        \cf2 public\cf1  String getfname()\par
+        \{\par
+            \cf2 return\cf1  \cf2 this\cf1 .fname;\par
+        \}\par
+\par
+        \cf2 public\cf1  String getlname()\par
+        \{\par
+            \cf2 return\cf1  \cf2 this\cf1 .lname;\par
+        \}\par
+\par
+        \cf2 public\cf1  \cf2 double\cf1  getsalary()\par
+        \{\par
+            \cf2 return\cf1  \cf2 this\cf1 .salary;\par
+        \}\par
+\par
+        \cf2 public\cf1  \cf2 double\cf1  yearlysalary()\par
+        \{\par
+            \cf2 return\cf1  12*\cf2 this\cf1 .salary;\par
+        \}\par
+    \}\par
+\par
+\f2 //Q4)\par
+\f1  \cf2 internal\cf1  \cf2 class\cf1  \cf3 TestDemo\cf1\par
+    \{\par
+        \cf2 static\cf1  \cf2 void\cf1  Main(\cf2 string\cf1 [] args)\par
+        \{\par
+            Rectangle1 r1 = \cf2 new\cf1  Rectangle1(12,4,\cf4 "blue"\cf1 );\par
+           \par
+            Console.WriteLine(r1.area());\par
+            r1.displayArea();\par
+            Console.WriteLine(r1.getColor());\par
+          \par
+            Console.ReadLine();\par
+        \}\par
+    \}\par
+\par
+    \cf2 abstract\cf1  \cf2 class\cf1  \cf3 Shape\cf1\par
+    \{\par
+        String color;\par
+      \cf2 public\cf1   \cf2 void\cf1  setColor(String c)\par
+        \{\par
+            color = c;\par
+        \}\par
+        \cf2 public\cf1   String getColor()\par
+        \{\par
+            \cf2 return\cf1  color;\par
+        \}\par
+        \cf2 public\cf1  \cf2 abstract\cf1  \cf2 double\cf1  area();\par
+\par
+       \par
+\par
+    \}\par
+\par
+    \cf2 class\cf1  \cf3 Rectangle1\cf1  : Shape\par
+    \{\par
+        \cf2 int\cf1  l, w;\par
+\par
+        \cf2 public\cf1  \cf3 Rectangle1\cf1 (\cf2 int\cf1  l,\cf2 int\cf1  b,String color)\par
+        \{\par
+            \cf2 this\cf1 .setColor(color);\par
+            \cf2 this\cf1 .l = l;\par
+            \cf2 this\cf1 .w= b;\par
+        \}\par
+        \cf2 public\cf1  \cf2 override\cf1  \cf2 double\cf1  area()\par
+        \{\par
+            \cf2 return\cf1  l * w;\par
+        \}\par
+\par
+        \cf2 public\cf1  \cf2 void\cf1  displayArea()\par
+        \{\par
+            Console.WriteLine(\cf4 "Area of Rectangle : "\cf1 +\cf2 this\cf1 .l*\cf2 this\cf1 .w);\par
+        \}\par
+    \}\par
+\par
+\f2 //Q5)\par
+\par
+\f1   \cf2 internal\cf1  \cf2 class\cf1  \cf3 PolymorphismTest\cf1\par
+    \{\par
+        \cf2 static\cf1  \cf2 void\cf1  Main(String [] args)\par
+        \{\par
+            Cube c = \cf2 new\cf1  Cube();\par
+            Console.WriteLine(\cf4 "area of cube : "\cf1 +c.area1());\par
+            Console.WriteLine(\cf4 "volume of cube : "\cf1 +c.volume());\par
+\par
+            Circle c1 = \cf2 new\cf1  Circle();\par
+            Console.WriteLine(\cf4 "area of circle : "\cf1  + c1.area1());\par
+            Console.WriteLine(\cf4 "volume of circle : "\cf1  + c1.volume());\par
+            Console.ReadLine();\par
+\par
+        \}\par
+\par
+    \}\par
+    \cf2 interface\cf1  \cf3 Shape1\cf1\par
+    \{\par
+        \cf2 double\cf1  area1();\par
+        \cf2 double\cf1  volume();\par
+    \}\par
+\par
+    \cf2 class\cf1  \cf3 Cube\cf1  : Shape1\par
+    \{\par
+        \cf2 int\cf1  x=10;\par
+        \cf2 public\cf1  \cf2 double\cf1  area1()\par
+        \{\par
+            \cf2 return\cf1  6 * x *x;\par
+        \}\par
+\par
+        \cf2 public\cf1  \cf2 double\cf1  volume()\par
+        \{\par
+            \cf2 return\cf1  x * x * x;\par
+        \}\par
+    \}\par
+    \cf2 class\cf1  \cf3 Circle\cf1  : Shape1\par
+    \{\par
+        \cf2 int\cf1  r = 10;\par
+        \cf2 public\cf1  \cf2 double\cf1  area1()\par
+        \{\par
+            \cf2 return\cf1  2 * 3.14 * r;\par
+        \}\par
+\par
+        \cf2 public\cf1  \cf2 double\cf1  volume()\par
+        \{\par
+            \cf2 return\cf1  0;\par
+        \}\par
+    \}\cf0\f0\fs22\lang9\par
+}
+ 

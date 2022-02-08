@@ -1,0 +1,11 @@
+D:\.NetPractice\Assignment10\Assignment10\bin\Debug\Assignment10.exe.config
+D:\.NetPractice\Assignment10\Assignment10\bin\Debug\Assignment10.exe
+D:\.NetPractice\Assignment10\Assignment10\bin\Debug\Assignment10.pdb
+D:\.NetPractice\Assignment10\Assignment10\obj\Debug\Assignment10.csproj.AssemblyReference.cache
+D:\.NetPractice\Assignment10\Assignment10\obj\Debug\Assignment10.csproj.SuggestedBindingRedirects.cache
+D:\.NetPractice\Assignment10\Assignment10\obj\Debug\Assignment10.Form1.resources
+D:\.NetPractice\Assignment10\Assignment10\obj\Debug\Assignment10.Properties.Resources.resources
+D:\.NetPractice\Assignment10\Assignment10\obj\Debug\Assignment10.csproj.GenerateResource.cache
+D:\.NetPractice\Assignment10\Assignment10\obj\Debug\Assignment10.csproj.CoreCompileInputs.cache
+D:\.NetPractice\Assignment10\Assignment10\obj\Debug\Assignment10.exe
+D:\.NetPractice\Assignment10\Assignment10\obj\Debug\Assignment10.pdb

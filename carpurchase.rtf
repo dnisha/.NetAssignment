@@ -1,0 +1,231 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Cascadia Mono;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;\red43\green145\blue175;\red163\green21\blue21;\red0\green128\blue0;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 //car purchase\par
+\par
+\cf1\f1\fs19 using\cf2  System;\par
+\cf1 using\cf2  System.Collections.Generic;\par
+\cf1 using\cf2  System.ComponentModel;\par
+\cf1 using\cf2  System.Data;\par
+\cf1 using\cf2  System.Drawing;\par
+\cf1 using\cf2  System.Linq;\par
+\cf1 using\cf2  System.Text;\par
+\cf1 using\cf2  System.Threading.Tasks;\par
+\cf1 using\cf2  System.Windows.Forms;\par
+\par
+\cf1 namespace\cf2  Calculator\par
+\{\par
+    \cf1 public\cf2  \cf1 partial\cf2  \cf1 class\cf2  \cf3 Form1\cf2  : Form\par
+    \{\par
+        String[] tataRed = \{ \cf4 "mode1"\cf2 , \cf4 "model2"\cf2  \};\par
+        String[] tataSilver = \{ \cf4 "mode1"\cf2 , \cf4 "model2"\cf2 , \cf4 "model3"\cf2  \};\par
+        String[] tataMaroon = \{ \cf4 "mode1"\cf2 , \cf4 "model2"\cf2  \};\par
+        String[] NissanRed = \{ \cf4 "mode1"\cf2 , \cf4 "model2"\cf2 , \cf4 "model3"\cf2  \};\par
+        String[] NissanSilver = \{ \cf4 "mode1"\cf2 , \cf4 "model2"\cf2  \};\par
+        String[] NissanMaroon = \{ \cf4 "mode1"\cf2 , \cf4 "model2"\cf2 , \cf4 "model3"\cf2  \};\par
+        String[] HyundaiRed = \{ \cf4 "mode1"\cf2 , \cf4 "model2"\cf2 , \cf4 "model3"\cf2 , \cf4 "model4"\cf2  \};\par
+        String[] HyundaiSilver = \{ \cf4 "mode1"\cf2 , \cf4 "model2"\cf2 , \cf4 "model3"\cf2  \};\par
+        String[] HyundaiMaroon = \{ \cf4 "mode1"\cf2 , \cf4 "model2"\cf2 , \cf4 "model3"\cf2 , \cf4 "model4"\cf2  \};\par
+        \cf1 public\cf2  \cf3 Form1\cf2 ()\par
+        \{\par
+            InitializeComponent();\par
+        \}\par
+\par
+        \cf1 private\cf2  \cf1 void\cf2  txt_price_TextChanged(\cf1 object\cf2  sender, EventArgs e)\par
+        \{\par
+          \par
+\par
+        \}\par
+\par
+        \cf1 private\cf2  \cf1 void\cf2  button1_Click(\cf1 object\cf2  sender, EventArgs e)\par
+        \{\par
+\par
+            \cf5 // String color = cbx_color.SelectedItem.ToString();\cf2\par
+            \cf5 // txt_price.Text = color;\cf2\par
+\par
+            \cf1 if\cf2  (cbx_car.SelectedItem.ToString() == \cf4 "Tata Nexon"\cf2  && cbx_color.SelectedItem.ToString() == \cf4 "Red"\cf2  && list_model.SelectedIndex == 0)\par
+            \{\par
+                txt_price.Text = \cf4 "150000"\cf2 ;\par
+            \}\par
+            \cf1 else\cf2  \cf1 if\cf2  (cbx_car.SelectedItem.ToString() == \cf4 "Tata Nexon"\cf2  && cbx_color.SelectedItem.ToString() == \cf4 "Red"\cf2  && list_model.SelectedIndex == 1)\par
+            \{\par
+                txt_price.Text = \cf4 "300000"\cf2 ;\par
+            \}\par
+            \cf1 else\cf2  \cf1 if\cf2  (cbx_car.SelectedItem.ToString() == \cf4 "Tata Nexon"\cf2  && cbx_color.SelectedItem.ToString() == \cf4 "Silver"\cf2  && list_model.SelectedIndex == 0)\par
+            \{\par
+                txt_price.Text = \cf4 "200000"\cf2 ;\par
+            \}\par
+            \cf1 else\cf2  \cf1 if\cf2  (cbx_car.SelectedItem.ToString() == \cf4 "Tata Nexon"\cf2  && cbx_color.SelectedItem.ToString() == \cf4 "Silver"\cf2  && list_model.SelectedIndex == 1)\par
+            \{\par
+                txt_price.Text = \cf4 "200000"\cf2 ;\par
+            \}\par
+            \cf1 else\cf2  \cf1 if\cf2  (cbx_car.SelectedItem.ToString() == \cf4 "Tata Nexon"\cf2  && cbx_color.SelectedItem.ToString() == \cf4 "Silver"\cf2  && list_model.SelectedIndex == 2)\par
+            \{\par
+                txt_price.Text = \cf4 "250000"\cf2 ;\par
+            \}\par
+            \cf1 else\cf2  \cf1 if\cf2  (cbx_car.SelectedItem.ToString() == \cf4 "Tata Nexon"\cf2  && cbx_color.SelectedItem.ToString() == \cf4 "Maroon"\cf2  && list_model.SelectedIndex == 0)\par
+            \{\par
+                txt_price.Text = \cf4 "400000"\cf2 ;\par
+            \}\par
+            \cf1 else\cf2  \cf1 if\cf2  (cbx_car.SelectedItem.ToString() == \cf4 "Tata Nexon"\cf2  && cbx_color.SelectedItem.ToString() == \cf4 "Maroon"\cf2  && list_model.SelectedIndex == 1)\par
+            \{\par
+                txt_price.Text = \cf4 "450000"\cf2 ;\par
+            \}\par
+            \cf1 else\cf2  \cf1 if\cf2  (cbx_car.SelectedItem.ToString() == \cf4 "Nissan Magnite"\cf2  && cbx_color.SelectedItem.ToString() == \cf4 "Red"\cf2  && list_model.SelectedIndex == 0)\par
+            \{\par
+                txt_price.Text = \cf4 "460000"\cf2 ;\par
+            \}\par
+            \cf1 else\cf2  \cf1 if\cf2  (cbx_car.SelectedItem.ToString() == \cf4 "Nissan Magnite"\cf2  && cbx_color.SelectedItem.ToString() == \cf4 "Red"\cf2  && list_model.SelectedIndex == 1)\par
+            \{\par
+                txt_price.Text = \cf4 "460000"\cf2 ;\par
+            \}\par
+            \cf1 else\cf2  \cf1 if\cf2  (cbx_car.SelectedItem.ToString() == \cf4 "Nissan Magnite"\cf2  && cbx_color.SelectedItem.ToString() == \cf4 "Red"\cf2  && list_model.SelectedIndex == 2)\par
+            \{\par
+                txt_price.Text = \cf4 "600000"\cf2 ;\par
+            \}\par
+            \cf1 else\cf2  \cf1 if\cf2  (cbx_car.SelectedItem.ToString() == \cf4 "Nissan Magnite"\cf2  && cbx_color.SelectedItem.ToString() == \cf4 "Silver"\cf2  && list_model.SelectedIndex == 0)\par
+            \{\par
+                txt_price.Text = \cf4 "600000"\cf2 ;\par
+            \}\par
+            \cf1 else\cf2  \cf1 if\cf2  (cbx_car.SelectedItem.ToString() == \cf4 "Nissan Magnite"\cf2  && cbx_color.SelectedItem.ToString() == \cf4 "Silver"\cf2  && list_model.SelectedIndex == 1)\par
+            \{\par
+                txt_price.Text = \cf4 "650000"\cf2 ;\par
+            \}\par
+            \cf1 else\cf2  \cf1 if\cf2  (cbx_car.SelectedItem.ToString() == \cf4 "Nissan Magnite"\cf2  && cbx_color.SelectedItem.ToString() == \cf4 "Maroon"\cf2  && list_model.SelectedIndex == 0)\par
+            \{\par
+                txt_price.Text = \cf4 "1650000"\cf2 ;\par
+            \}\par
+            \cf1 else\cf2  \cf1 if\cf2  (cbx_car.SelectedItem.ToString() == \cf4 "Nissan Magnite"\cf2  && cbx_color.SelectedItem.ToString() == \cf4 "Maroon"\cf2  && list_model.SelectedIndex == 1)\par
+            \{\par
+                txt_price.Text = \cf4 "1600000"\cf2 ;\par
+            \}\par
+            \cf1 else\cf2  \cf1 if\cf2  (cbx_car.SelectedItem.ToString() == \cf4 "Nissan Magnite"\cf2  && cbx_color.SelectedItem.ToString() == \cf4 "Maroon"\cf2  && list_model.SelectedIndex == 2)\par
+            \{\par
+                txt_price.Text = \cf4 "1700000"\cf2 ;\par
+            \}\par
+            \cf1 else\cf2  \cf1 if\cf2  (cbx_car.SelectedItem.ToString() == \cf4 "Hyundai Verna"\cf2  && cbx_color.SelectedItem.ToString() == \cf4 "Red"\cf2  && list_model.SelectedIndex == 0)\par
+            \{\par
+                txt_price.Text = \cf4 "800000"\cf2 ;\par
+            \}\par
+            \cf1 else\cf2  \cf1 if\cf2  (cbx_car.SelectedItem.ToString() == \cf4 "Hyundai Verna"\cf2  && cbx_color.SelectedItem.ToString() == \cf4 "Red"\cf2  && list_model.SelectedIndex == 1)\par
+            \{\par
+                txt_price.Text = \cf4 "700000"\cf2 ;\par
+            \}\par
+            \cf1 else\cf2  \cf1 if\cf2  (cbx_car.SelectedItem.ToString() == \cf4 "Hyundai Verna"\cf2  && cbx_color.SelectedItem.ToString() == \cf4 "Red"\cf2  && list_model.SelectedIndex == 2)\par
+            \{\par
+                txt_price.Text = \cf4 "850000"\cf2 ;\par
+            \}\par
+            \cf1 else\cf2  \cf1 if\cf2  (cbx_car.SelectedItem.ToString() == \cf4 "Hyundai Verna"\cf2  && cbx_color.SelectedItem.ToString() == \cf4 "Red"\cf2  && list_model.SelectedIndex == 3)\par
+            \{\par
+                txt_price.Text = \cf4 "800000"\cf2 ;\par
+            \}\par
+            \cf1 else\cf2  \cf1 if\cf2  (cbx_car.SelectedItem.ToString() == \cf4 "Hyundai Verna"\cf2  && cbx_color.SelectedItem.ToString() == \cf4 "Silver"\cf2  && list_model.SelectedIndex == 0)\par
+            \{\par
+                txt_price.Text = \cf4 "850000"\cf2 ;\par
+            \}\par
+            \cf1 else\cf2  \cf1 if\cf2  (cbx_car.SelectedItem.ToString() == \cf4 "Hyundai Verna"\cf2  && cbx_color.SelectedItem.ToString() == \cf4 "Silver"\cf2  && list_model.SelectedIndex == 1)\par
+            \{\par
+                txt_price.Text = \cf4 "950000"\cf2 ;\par
+            \}\par
+            \cf1 else\cf2  \cf1 if\cf2  (cbx_car.SelectedItem.ToString() == \cf4 "Hyundai Verna"\cf2  && cbx_color.SelectedItem.ToString() == \cf4 "Silver"\cf2  && list_model.SelectedIndex == 2)\par
+            \{\par
+                txt_price.Text = \cf4 "850000"\cf2 ;\par
+            \}\par
+            \cf1 else\cf2  \cf1 if\cf2  (cbx_car.SelectedItem.ToString() == \cf4 "Hyundai Verna"\cf2  && cbx_color.SelectedItem.ToString() == \cf4 "Maroon"\cf2  && list_model.SelectedIndex == 0)\par
+            \{\par
+                txt_price.Text = \cf4 "70000"\cf2 ;\par
+            \}\par
+            \cf1 else\cf2  \cf1 if\cf2  (cbx_car.SelectedItem.ToString() == \cf4 "Hyundai Verna"\cf2  && cbx_color.SelectedItem.ToString() == \cf4 "Maroon"\cf2  && list_model.SelectedIndex == 1)\par
+            \{\par
+                txt_price.Text = \cf4 "75000"\cf2 ;\par
+            \}\par
+            \cf1 else\cf2  \cf1 if\cf2  (cbx_car.SelectedItem.ToString() == \cf4 "Hyundai Verna"\cf2  && cbx_color.SelectedItem.ToString() == \cf4 "Maroon"\cf2  && list_model.SelectedIndex == 2)\par
+            \{\par
+                txt_price.Text = \cf4 "90000"\cf2 ;\par
+            \}\par
+            \cf1 else\cf2  \cf1 if\cf2  (cbx_car.SelectedItem.ToString() == \cf4 "Hyundai Verna"\cf2  && cbx_color.SelectedItem.ToString() == \cf4 "Maroon"\cf2  && list_model.SelectedIndex == 3)\par
+            \{\par
+                txt_price.Text = \cf4 "100000"\cf2 ;\par
+            \}\par
+        \}\par
+\par
+        \cf1 private\cf2  \cf1 void\cf2  cbx_car_SelectedIndexChanged(\cf1 object\cf2  sender, EventArgs e)\par
+        \{\par
+\par
+          \par
+        \}\par
+\par
+        \cf1 private\cf2  \cf1 void\cf2  cbx_color_SelectedIndexChanged(\cf1 object\cf2  sender, EventArgs e)\par
+        \{\par
+            \cf5 /*\par
+             * Red\par
+Silver\par
+Maroon\par
+            */\cf2\par
+        \par
+            \cf1 if\cf2  (cbx_car.SelectedItem.ToString() == \cf4 "Tata Nexon"\cf2  && cbx_color.SelectedItem.ToString()== \cf4 "Red"\cf2 )\par
+            \{\par
+                list_model.Items.Clear();\par
+                \cf1 foreach\cf2  (String s \cf1 in\cf2  tataRed)\par
+                    list_model.Items.Add(s);\par
+            \}\par
+            \cf1 else\cf2  \cf1 if\cf2  (cbx_car.SelectedItem.ToString() == \cf4 "Tata Nexon"\cf2  && cbx_color.SelectedItem.ToString() == \cf4 "Silver"\cf2 )\par
+            \{\par
+                list_model.Items.Clear();\par
+                \cf1 foreach\cf2  (String s \cf1 in\cf2  tataSilver)\par
+                    list_model.Items.Add(s);\par
+            \}\par
+            \cf1 else\cf2  \cf1 if\cf2  (cbx_car.SelectedItem.ToString() == \cf4 "Tata Nexon"\cf2  && cbx_color.SelectedItem.ToString() == \cf4 "Maroon"\cf2 )\par
+            \{\par
+                list_model.Items.Clear();\par
+                \cf1 foreach\cf2  (String s \cf1 in\cf2  tataMaroon)\par
+                    list_model.Items.Add(s);\par
+            \}\par
+            \cf1 else\cf2  \cf1 if\cf2  (cbx_car.SelectedItem.ToString() == \cf4 "Nissan Magnite"\cf2  && cbx_color.SelectedItem.ToString() == \cf4 "Red"\cf2 )\par
+            \{\par
+                list_model.Items.Clear();\par
+                \cf1 foreach\cf2  (String s \cf1 in\cf2  NissanRed)\par
+                    list_model.Items.Add(s);\par
+            \}\par
+            \cf1 else\cf2  \cf1 if\cf2  (cbx_car.SelectedItem.ToString() == \cf4 "Nissan Magnite"\cf2  && cbx_color.SelectedItem.ToString() == \cf4 "Silver"\cf2 )\par
+            \{\par
+                list_model.Items.Clear();\par
+                \cf1 foreach\cf2  (String s \cf1 in\cf2  NissanSilver)\par
+                    list_model.Items.Add(s);\par
+            \}\par
+            \cf1 else\cf2  \cf1 if\cf2  (cbx_car.SelectedItem.ToString() == \cf4 "Nissan Magnite"\cf2  && cbx_color.SelectedItem.ToString() == \cf4 "Maroon"\cf2 )\par
+            \{\par
+                list_model.Items.Clear();\par
+                \cf1 foreach\cf2  (String s \cf1 in\cf2  NissanMaroon)\par
+                    list_model.Items.Add(s);\par
+            \}\par
+            \cf1 else\cf2  \cf1 if\cf2  (cbx_car.SelectedItem.ToString() == \cf4 "Hyundai Verna"\cf2  && cbx_color.SelectedItem.ToString() == \cf4 "Red"\cf2 )\par
+            \{\par
+                list_model.Items.Clear();\par
+                \cf1 foreach\cf2  (String s \cf1 in\cf2  HyundaiRed)\par
+                    list_model.Items.Add(s);\par
+            \}\par
+            \cf1 else\cf2  \cf1 if\cf2  (cbx_car.SelectedItem.ToString() == \cf4 "Hyundai Verna"\cf2  && cbx_color.SelectedItem.ToString() == \cf4 "Silver"\cf2 )\par
+            \{\par
+                list_model.Items.Clear();\par
+                \cf1 foreach\cf2  (String s \cf1 in\cf2  HyundaiSilver)\par
+                    list_model.Items.Add(s);\par
+            \}\par
+            \cf1 else\cf2  \cf1 if\cf2  (cbx_car.SelectedItem.ToString() == \cf4 "Hyundai Verna"\cf2  && cbx_color.SelectedItem.ToString() == \cf4 "Maroon"\cf2 )\par
+            \{\par
+                list_model.Items.Clear();\par
+                \cf1 foreach\cf2  (String s \cf1 in\cf2  HyundaiMaroon)\par
+                    list_model.Items.Add(s);\par
+            \}\par
+\par
+        \}\par
+\par
+        \cf1 private\cf2  \cf1 void\cf2  list_model_SelectedIndexChanged(\cf1 object\cf2  sender, EventArgs e)\par
+        \{\par
+          \par
+        \}\par
+    \}\par
+\}\par
+\cf0\f0\fs22\par
+}
+ 

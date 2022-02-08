@@ -1,0 +1,8 @@
+D:\.NetPractice\Assignment7\Assignment7\bin\Debug\Assignment7.exe.config
+D:\.NetPractice\Assignment7\Assignment7\bin\Debug\Assignment7.exe
+D:\.NetPractice\Assignment7\Assignment7\bin\Debug\Assignment7.pdb
+D:\.NetPractice\Assignment7\Assignment7\obj\Debug\StudentAndTeacherTest.csproj.AssemblyReference.cache
+D:\.NetPractice\Assignment7\Assignment7\obj\Debug\StudentAndTeacherTest.csproj.SuggestedBindingRedirects.cache
+D:\.NetPractice\Assignment7\Assignment7\obj\Debug\StudentAndTeacherTest.csproj.CoreCompileInputs.cache
+D:\.NetPractice\Assignment7\Assignment7\obj\Debug\Assignment7.exe
+D:\.NetPractice\Assignment7\Assignment7\obj\Debug\Assignment7.pdb

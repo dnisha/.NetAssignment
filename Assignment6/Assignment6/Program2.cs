@@ -10,6 +10,7 @@ namespace Assignment6
     {
         static void Main(String [] args)
         {
+            //Q2)
             String dt = DateTime.Now.ToString("MM/dd/yyyy HH:mm:ss tt");
             String dt1 = DateTime.Now.ToString("MM/dd/yyyy");
             String dt2 = DateTime.Now.ToString("HH:mm:ss");
